@@ -1,0 +1,14 @@
+server:
+  port: 9092
+upload:
+  folder: /home/vagrant/staging/
+  complete:
+    exchange: uploadComplete
+    queue: uploadNotificationQueue
+spring:
+  rabbitmq:
+    host: white-mynah-bird.rmq.cloudamqp.com
+    port: 5672
+    virtual-host: fpmjbsta
+    username: fpmjbsta
+    password: BDi6b8zNMjeulvKXoJvRD3omBgwqOZg1

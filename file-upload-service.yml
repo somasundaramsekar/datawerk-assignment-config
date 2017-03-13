@@ -1,0 +1,23 @@
+spring:
+  rabbitmq:
+    host: white-mynah-bird.rmq.cloudamqp.com
+    port: 5672
+    virtual-host: fpmjbsta
+    username: fpmjbsta
+    password: BDi6b8zNMjeulvKXoJvRD3omBgwqOZg1
+  http:
+    multipart:
+      enabled: false
+      max-file-size: 1124MB
+      max-request-size: 1124MB
+server:
+  port: 9091
+management:
+  security:
+    enabled: false
+upload:
+  folder: /home/vagrant/staging/
+  complete:
+    exchange: uploadComplete
+    queue: uploadNotificationQueue
+
